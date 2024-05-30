@@ -13,10 +13,10 @@ import MonitorDetails from './components/MonitorDetails';
 
 
 const router = createBrowserRouter([
-  { path: '/', element: <App /> },
+  { path: '/', element: <Login /> },
   { path: '/login', element: <Login /> },
   { path: '/signup', element: <Signup /> },
-  { path: '/dashboard', element: <Dashboard /> },
+  { path: 'https://665852236690d5e351cfb9db--splendorous-nasturtium-c39481.netlify.app/dashboard', element: <Dashboard /> },
   { path: '/create-prescription', element: <CreatePrescription /> },
   { path: '/set-inventory', element: <SetInventory /> },
   { path: '/monitor-details', element: <MonitorDetails /> },

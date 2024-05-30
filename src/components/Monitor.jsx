@@ -16,6 +16,8 @@ const Monitor = () => {
     navigate('/monitor-details', { state: { prescription } });
   };
 
+  const p = ['Father', 'Mother', 'Sister']
+
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto py-6">
@@ -28,7 +30,7 @@ const Monitor = () => {
               onClick={() => handleCardClick(prescription)}
             >
               <img src={`https://via.placeholder.com/150`} alt="User" className="w-16 h-16 rounded-full mb-4" />
-              <h3 className="text-lg text-white font-bold">{prescription.name}</h3>
+              <h3 className="text-lg text-white font-bold">{p[index]}</h3>
               <p className="text-white">Medicine Left: {prescription.left} days</p>
             </div>
           ))}
